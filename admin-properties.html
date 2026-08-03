@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Manage Properties | HomeNest</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        🏠 HomeNest
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="favorites.html">Favorites</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="admin.html">Admin</a>
+
+        <button
+            id="theme-toggle"
+            title="Toggle Dark Mode"
+        >
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ========================= -->
+<!-- ADD PROPERTY -->
+<!-- ========================= -->
+
+<section class="admin-section">
+
+    <div class="admin-container">
+
+        <div class="admin-card">
+
+            <h2>
+                Add New Property
+            </h2>
+
+            <form id="property-form">
+
+                <label>🏠 Property Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Modern Family House"
+                    required
+                >
+
+                <label>📍 Location</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Mangalore"
+                    required
+                >
+
+                <label>💰 Price</label>
+
+                <input
+                    type="text"
+                    id="price"
+                    placeholder="65 Lakh or 2 Cr"
+                    required
+                >
+
+                <label class="upload-label">
+
+                    📷 Choose Property Image
+
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                    required
+                >
+
+                <img
+                    id="image-preview"
+                    src=""
+                    alt="Preview"
+                    style="
+                        width:100%;
+                        max-height:220px;
+                        object-fit:cover;
+                        border-radius:10px;
+                        margin-top:15px;
+                        display:none;
+                    "
+                >
+
+                <label>🛏️ Bedrooms</label>
+
+                <input
+                    type="number"
+                    id="bedrooms"
+                    placeholder="Enter number of bedrooms"
+                    min="0"
+                    required
+                >
+
+                <label>🚿 Bathrooms</label>
+
+                <input
+                    type="number"
+                    id="bathrooms"
+                    placeholder="Enter number of bathrooms"
+                    min="0"
+                    required
+                >
+
+                <label>🚗 Parking Spaces</label>
+
+                <input
+                    type="number"
+                    id="parking"
+                    placeholder="Enter number of parking spaces"
+                    min="0"
+                    required
+                >
+
+                <label>🏡 Property Type</label>
+
+                <select id="type">
+
+                    <option value="house">
+                        House
+                    </option>
+
+                    <option value="villa">
+                        Villa
+                    </option>
+
+                </select>
+
+                <label>📐 Property Size</label>
+
+                <input
+                    type="text"
+                    id="size"
+                    placeholder="1800 sq.ft"
+                    required
+                >
+
+                <label>📝 Description</label>
+
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Enter complete property description..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+
+                    ➕ Save Property
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- PROPERTY LIST -->
+        <!-- ========================= -->
+
+        <div class="admin-card">
+
+            <h2>
+                All Properties
+            </h2>
+
+            <div id="admin-properties">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+
+        © 2026 HomeNest. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<script src="js/properties-data.js"></script>
+
+<script src="js/admin-properties.js"></script>
+
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>

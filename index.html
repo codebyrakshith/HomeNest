@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HomeNest | Find Your Dream Home</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🏠 HomeNest
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="favorites.html">
+                Favorites
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+            <button
+                id="theme-toggle"
+                title="Toggle Dark Mode"
+            >
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <h1>
+            Find Your Dream Home
+        </h1>
+
+        <p>
+            Discover beautiful houses and villas at the best prices.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search by city..."
+            >
+
+            <select id="type-filter">
+
+                <option value="all">
+                    All Types
+                </option>
+
+                <option value="house">
+                    House
+                </option>
+
+                <option value="villa">
+                    Villa
+                </option>
+
+            </select>
+
+            <select id="price-filter">
+
+                <option value="all">
+                    All Prices
+                </option>
+
+                <option value="under50">
+                    Under ₹50 Lakh
+                </option>
+
+                <option value="50to80">
+                    ₹50–₹80 Lakh
+                </option>
+
+                <option value="above80">
+                    Above ₹80 Lakh
+                </option>
+
+            </select>
+
+            <button
+                id="search-button"
+            >
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PROPERTIES -->
+    <!-- ========================= -->
+
+    <section class="featured-properties">
+
+        <h2>
+            Featured Properties
+        </h2>
+
+        <p class="section-subtitle">
+            Choose your perfect home
+        </p>
+
+        <div
+            id="property-container"
+            class="property-container"
+        >
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    🏠 HomeNest
+                </h2>
+
+                <p>
+                    Your trusted property partner.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="favorites.html">
+                    Favorites
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📧 info@homenest.com
+                </p>
+
+                <p>
+                    📞 +91 9876543210
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 HomeNest. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <script src="js/properties-data.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>
